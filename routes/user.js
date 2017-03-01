@@ -1,12 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
-
-app.use(bodyParser.json());
-
 /* Connexion de l'utilisateur */
 router.post('/login', function(req, res, next) {
 
