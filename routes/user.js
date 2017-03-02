@@ -1,12 +1,18 @@
 var express = require('express');
 var router = express.Router();
 
+
 /* Connexion de l'utilisateur */
 router.post('/login', function(req, res, next) {
 
+    console.log("Connexion d'un utilisateur");
+
+    var db = req.db;
+    var collection = db.get('users');
+
 	var user = {login: req.body.user.login, mdp: req.body.user.mdp}
 
-	db.collection("users").findOne(objToFind, function(error, result) {
+	collection.findOne(objToFind, function(error, result) {
 	    if (error) throw error;
 	    console.log(result.prenom +" "+ result.nom +" s'est connecté. User : "+ result._id.toString());
 	});
@@ -17,6 +23,11 @@ router.post('/login', function(req, res, next) {
 /* Inscription */
 router.post('/signin', function(req, res, next) {
 
+    console.log("Insertion d'un utilisateur");
+
+    var db = req.db;
+    var collection = db.get('users');
+
 	var newUser = { login: req.body.user.login, 
 					mdp: req.body.user.mdp, 
 					nom: req.body.user.nom, 
@@ -24,7 +35,7 @@ router.post('/signin', function(req, res, next) {
 					email: req.body.user.mail, 
 					ville: req.body.user.ville};  
 
-	db.collection("users").insert(newUser, null, function (error, results) {
+	collection.insert(newUser, null, function (error, results) {
 	    if (error) throw error;
 
 	    console.log("L'utilisateur a bien été inséré");    
