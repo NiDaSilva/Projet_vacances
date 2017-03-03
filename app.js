@@ -23,7 +23,7 @@ MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use(session({ secret: 'session', cookie: {httpOnly: false}, store: new MongoStore({ url: 'mongodb://localhost:27017/db_IMIEVacances' }) }));
+	app.use(session({ secret: 'session', cookie: {httpOnly: false}, store: new MongoStore({ url: 'mongodb://10.2.8.19:27017/db_IMIEVacances' }) }));
 	app.use(express.static(path.join(__dirname, 'public')));
 
 

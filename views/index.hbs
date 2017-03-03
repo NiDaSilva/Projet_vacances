@@ -48,12 +48,14 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-
-<div class="row container">
-    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-
+{{#each listeHotel}}
+    <div class="row container">
+        <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
+            <h3>{{ nom }}</h3>
+        </div>
     </div>
-</div>
+{{/each}}
+
 
 <script>
 $("#login").click(function () {
