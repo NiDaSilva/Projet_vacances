@@ -10,7 +10,8 @@ var MongoStore = require('connect-mongo')(session);
 
 var MongoClient = require("mongodb").MongoClient;
 fs = require('fs');
-	var app = express();
+
+var app = express();
 
 MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
 	if(err){return console.dir(err);}
@@ -50,7 +51,6 @@ MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
 		res.status(err.status || 500);
 		res.render('error');
 	});
-
 });
 
-	module.exports = app;
+module.exports = app;
