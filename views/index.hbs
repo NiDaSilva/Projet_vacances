@@ -48,6 +48,9 @@
     </div><!-- /.container-fluid -->
 </nav>
 <div class="col-lg-12">
+    <div id="detail" class="col-lg-6 detail-card">
+
+    </div>
     {{#each listeHotel}}
         <div class="col-lg-4">
             <div id="{{_id}}" class="card card-cascade narrower">
@@ -104,6 +107,7 @@
             dataType: 'json',
             success: function(data) {
                 console.log(data);
+                $("#detail").show();
             },
             type: 'POST'
         });

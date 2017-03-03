@@ -163,3 +163,12 @@ a {
     display: inline-block;
     color: white;
 }
+.detail-card{
+    z-index: 100;
+    display: none;
+    background: white;
+    border-radius: 10px;
+    border: solid black 1px;
+    height: 500px;
+    position: fixed !important;
+}
