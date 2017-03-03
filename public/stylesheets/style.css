@@ -176,3 +176,9 @@ a {
 .navbar-left{
     padding: 0 !important;
 }
+.red-text{
+    color: darkred;
+}
+.card-title{
+    font-weight: 300;
+}

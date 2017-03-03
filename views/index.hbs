@@ -10,19 +10,18 @@
     <div class="col-lg-10 col-lg-offset-2">
         {{#each listeHotel}}
             <div class="col-lg-4 text-center">
-                <div id="{{_id}}" class="card card-cascade narrower">
+                <div class="card card-cascade narrower">
                     <div class="view overlay hm-white-slight">
                         <img class="img-fluid" src="/images/default.pg" style="width: 318px;" alt="Card image cap">
                     </div>
                     <a class="btn btn-green"><i class="glyphicon glyphicon-chevron-right chevron"></i> </a>
                     <div class="card-block">
-                        <h5 class="red-text">{{nom}}<i class="glyphicon glyphicon-money"></i></h5>
+                        <h5 id="{{_id}}" class="red-text">{{nom}} <i class="glyphicon glyphicon-eye-open"></i></h5>
                         <h4 class="card-title">{{ville}}</h4>
                         <p class="card-text"></p>
                         <a href="{{website}}" class="btn btn-primary">Site web</a>
                     </div>
                 </div>
-                <i class="glyphicon glyphicon-eye-open"></i>
             </div>
         {{/each}}
     </div>
@@ -56,7 +55,7 @@
             showConfirmButton: false
         });
     });
-    $(".card").click(function () {
+    $(".red-text").click(function () {
 
         $.ajax({
             url: '/detail',
