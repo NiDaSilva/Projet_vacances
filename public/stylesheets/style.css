@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -110,7 +109,7 @@ a {
   left: 0;
   right: 0;
   top: 0;
-  z-index: -1;
+  z-index: 100;
 }
 .card{
     border:0;
@@ -135,6 +134,7 @@ a {
 .card-block{
     padding: 1.25rem;
     box-sizing: inherit;
+    text-align: left;
 }
 .btn-action{
     margin: -23px 20px -23px auto;
@@ -150,25 +150,29 @@ a {
     margin: -23px 20px -23px auto;
     height: 47px;
     width: 47px;
+    margin-right: -280px;
     position: relative;
     background-color: #435247;
     border-radius: 50% !important;
 }
 .chevron{
+    width: 100%;
     font-size: 18px;
     margin-top: 5px;
     text-rendering: auto;
-    width: inherit;
     text-align: center;
     display: inline-block;
     color: white;
 }
-.detail-card{
-    z-index: 100;
-    display: none;
-    background: white;
-    border-radius: 10px;
-    border: solid black 1px;
-    height: 500px;
+.sidebar-filter{
+    height: 1080px;
+    left: 0;
+    background: darkgray;
     position: fixed !important;
+}
+.row{
+    margin-top:100px;
+}
+.navbar-left{
+    padding: 0 !important;
 }

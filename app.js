@@ -13,17 +13,16 @@ fs = require('fs');
 
 var app = express();
 
-MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
+MongoClient.connect("mongodb://localhost/db_IMIEVacances", function (err, db) {
 	if(err){return console.dir(err);}
 	console.log("Connecté à la base de données !");
-
 	// uncomment after placing your favicon in /public
 	//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 	app.use(logger('dev'));
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({ extended: false }));
 	app.use(cookieParser());
-	app.use(session({ secret: 'session', cookie: {httpOnly: false}, store: new MongoStore({ url: 'mongodb://10.2.8.19:27017/db_IMIEVacances' }) }));
+	app.use(session({ secret: 'session', cookie: {httpOnly: false}, store: new MongoStore({ url: 'mongodb://localhost:27017/db_IMIEVacances' }) }));
 	app.use(express.static(path.join(__dirname, 'public')));
 
 
