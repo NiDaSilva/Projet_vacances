@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ecfdd496-5ffd-4e15-a45a-29db99b6bbd2" name="Default" comment="add function to populate database , few usefull libraries">
+    <list default="true" id="ecfdd496-5ffd-4e15-a45a-29db99b6bbd2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/style.css" afterPath="$PROJECT_DIR$/public/stylesheets/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/index.js" afterPath="$PROJECT_DIR$/routes/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.hbs" afterPath="$PROJECT_DIR$/views/index.hbs" />
     </list>
@@ -23,11 +22,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.hbs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
+            <state relative-caret-position="136">
+              <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -79,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+              <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -105,11 +104,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+            <state relative-caret-position="360">
+              <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -139,8 +138,8 @@
         <option value="$PROJECT_DIR$/MongoDb.js" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/public/stylesheets/style.css" />
-        <option value="$PROJECT_DIR$/views/index.hbs" />
         <option value="$PROJECT_DIR$/routes/index.js" />
+        <option value="$PROJECT_DIR$/views/index.hbs" />
       </list>
     </option>
   </component>
@@ -334,10 +333,8 @@
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
           <PATH vcs="Git" revision="">$PROJECT_DIR$/app.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/index.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/reservation.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/routes/user.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/index.hbs</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/login.hbs</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -345,62 +342,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/LICENSE</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/changelog.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/any.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/assert.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/async.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/bind.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/bluebird.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/call_get.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/cancel.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/catch_filter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/context.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/debuggability.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/direct_resolve.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/each.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/errors.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/es5.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/filter.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/finally.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/generators.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/join.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/map.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/method.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/nodeback.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/nodeify.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promise_array.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/promisify.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/props.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/queue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/race.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/reduce.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/schedule.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/settle.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/some.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/synchronous_inspection.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/thenables.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/timers.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/using.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/js/release/util.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/bluebird/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/.babelrc</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/.eslintrc.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/.travis.yml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/CHANGELOG.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/es5.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/package.json</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/src-es5/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/node_modules/connect-mongo/src/index.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/signin.hbs</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -408,7 +349,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/views/user.hbs</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -574,7 +514,7 @@
       <workItem from="1488375590176" duration="788000" />
       <workItem from="1488376580853" duration="6088000" />
       <workItem from="1488445522085" duration="12991000" />
-      <workItem from="1488531714341" duration="15814000" />
+      <workItem from="1488531714341" duration="17737000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1488295273306</created>
@@ -611,11 +551,18 @@
       <option name="project" value="LOCAL" />
       <updated>1488549284536</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change a bit index, add css , begin detail route">
+      <created>1488556203990</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1488556203990</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53071000" />
+    <option name="totallyTimeSpent" value="54994000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1922" height="1055" extended-state="6" />
@@ -653,7 +600,8 @@
     <MESSAGE value="login page" />
     <MESSAGE value="add function to populate database , few usefull libraries" />
     <MESSAGE value="display name after search in monogDB" />
-    <option name="LAST_COMMIT_MESSAGE" value="display name after search in monogDB" />
+    <MESSAGE value="change a bit index, add css , begin detail route" />
+    <option name="LAST_COMMIT_MESSAGE" value="change a bit index, add css , begin detail route" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -953,14 +901,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/routes/login.js" />
-    <entry file="file://$PROJECT_DIR$/views/login.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="105" lean-forward="false" selection-start-line="0" selection-start-column="105" selection-end-line="0" selection-end-column="105" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/www">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -22822,16 +22762,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/index.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="73" column="31" lean-forward="true" selection-start-line="73" selection-start-column="31" selection-end-line="73" selection-end-column="31" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MongoDb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -22843,7 +22773,7 @@
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <caret line="16" column="37" lean-forward="false" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -22856,11 +22786,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/login.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="105" lean-forward="false" selection-start-line="0" selection-start-column="105" selection-end-line="0" selection-end-column="105" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/routes/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="2" lean-forward="true" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
+        <state relative-caret-position="360">
+          <caret line="24" column="2" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="24" selection-end-column="2" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="64" column="52" lean-forward="false" selection-start-line="64" selection-start-column="52" selection-end-line="64" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

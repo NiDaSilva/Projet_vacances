@@ -16,10 +16,9 @@ module.exports = function (app, db) {
 
     /* GET detail page. */
     app.post('/detail', function(req, res, next) {
-
-        db.collection("logements").find({_id:req.body.id}).toArray(function(err, docs) {
-            hbs.registerPartial("popup_login", fs.readFileSync(__dirname+"/../views/login.hbs", 'utf-8'));
-            hbs.registerPartial("popup_signin", fs.readFileSync(__dirname+"/../views/signin.hbs", 'utf-8'));
+        var MongoObjectID = require("mongodb").ObjectID;
+        var idResa = req.body.id;
+        db.collection("logements").findOne({_id: new MongoObjectID(idResa)},function(err, docs) {
             res.send(docs);
         });
     });

@@ -50,7 +50,7 @@
 <div class="col-lg-12">
     {{#each listeHotel}}
         <div class="col-lg-4">
-            <div class="card card-cascade narrower">
+            <div id="{{_id}}" class="card card-cascade narrower">
                 <div class="view overlay hm-white-slight">
                     <img class="img-fluid" src="/images/default.pg" style="width: 318px;" alt="Card image cap">
                 </div>
@@ -62,6 +62,7 @@
                     <a href="{{website}}" class="btn btn-primary">Site web</a>
                 </div>
             </div>
+            <i class="glyphicon glyphicon-eye-open"></i>
         </div>
     {{/each}}
 </div>
@@ -93,4 +94,21 @@
             showConfirmButton: false
         });
     });
+    $(".card").click(function () {
+
+        $.ajax({
+            url: '/detail',
+            data: {
+                id: $(this).attr("id")
+            },
+            dataType: 'json',
+            success: function(data) {
+                console.log(data);
+            },
+            type: 'POST'
+        });
+    });
+
+
+
 </script>
