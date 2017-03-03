@@ -37,7 +37,7 @@
             </form>
             <ul class="nav navbar-nav navbar-right">
                 {{#if authenticated }}
-                    <li><a id="profile">Profile</a></li>
+                    <li><a id="editProfile">{{ user.prenom}} {{ user.nom}}</a></li>
                     <li><a id="logout" href="/user/logout">Logout</a></li>
                 {{else}}
                     <li><a id="login">Se connecter</a></li>
@@ -68,6 +68,14 @@ $("#signin").click(function () {
     swal({
         title: 'Inscription',
         html: '{{> popup_signin}}',
+        showCancelButton: false,
+        showConfirmButton: false
+    });
+});
+$("#editProfile").click(function () {
+    swal({
+        title: 'Editer mon profil',
+        html: '{{> popup_editProfile}}',
         showCancelButton: false,
         showConfirmButton: false
     });
