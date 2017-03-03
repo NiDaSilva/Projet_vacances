@@ -10,8 +10,18 @@ var db = monk('localhost:27017/db_IMIEVacances');
 var hbs = require("hbs");
 var session = require('express-session');
 
-var index = require('./routes/index');
-var user = require('./routes/user');
+
+var MongoClient = require("mongodb").MongoClient;
+fs = require('fs');
+
+
+MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
+    if(err){return console.dir(err);}
+
+    var index = require('./routes/index')(app, db);
+    var user = require('./routes/user')(app, db);
+    console.log("Connecté à la base de données !");
+});
 
 var app = express();
 
