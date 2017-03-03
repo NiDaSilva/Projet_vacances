@@ -36,17 +36,13 @@
                 <button type="submit" class="btn btn-default">Submit</button>
             </form>
             <ul class="nav navbar-nav navbar-right">
-                <li><a id="signin">sign in</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
-                    </ul>
-                </li>
+                {{#if authenticated }}
+                    <li><a id="profile">Profile</a></li>
+                    <li><a id="logout" href="/user/logout">Logout</a></li>
+                {{else}}
+                    <li><a id="login">Se connecter</a></li>
+                    <li><a id="signin">Sinscrire</a></li>
+                {{/if}}
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -57,21 +53,24 @@
     <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
 
     </div>
-
 </div>
 
 <script>
-$("#signin").click(function () {
-
+$("#login").click(function () {
     swal({
-        title: 'Login',
+        title: 'Connexion',
         html: '{{> popup_login}}',
         showCancelButton: false,
         showConfirmButton: false
     });
-
-
-
+});
+$("#signin").click(function () {
+    swal({
+        title: 'Inscription',
+        html: '{{> popup_signin}}',
+        showCancelButton: false,
+        showConfirmButton: false
+    });
 });
 
 </script>
