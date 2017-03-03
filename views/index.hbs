@@ -47,38 +47,50 @@
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
-
-
-<div class="row container">
-    <div class="col-sm-12 col-xs-12 col-md-12 col-lg-12">
-
-    </div>
+<div class="col-lg-12">
+    {{#each listeHotel}}
+        <div class="col-lg-4">
+            <div class="card card-cascade narrower">
+                <div class="view overlay hm-white-slight">
+                    <img class="img-fluid" src="/images/default.pg" style="width: 318px;" alt="Card image cap">
+                </div>
+                <a class="btn btn-green"><i class="glyphicon glyphicon-chevron-right chevron"></i> </a>
+                <div class="card-block">
+                    <h5 class="red-text">{{nom}}<i class="glyphicon glyphicon-money"></i></h5>
+                    <h4 class="card-title">{{ville}}</h4>
+                    <p class="card-text"></p>
+                    <a href="{{website}}" class="btn btn-primary">Site web</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
 </div>
 
-<script>
-$("#login").click(function () {
-    swal({
-        title: 'Connexion',
-        html: '{{> popup_login}}',
-        showCancelButton: false,
-        showConfirmButton: false
-    });
-});
-$("#signin").click(function () {
-    swal({
-        title: 'Inscription',
-        html: '{{> popup_signin}}',
-        showCancelButton: false,
-        showConfirmButton: false
-    });
-});
-$("#editProfile").click(function () {
-    swal({
-        title: 'Editer mon profil',
-        html: '{{> popup_editProfile}}',
-        showCancelButton: false,
-        showConfirmButton: false
-    });
-});
 
+
+<script>
+    $("#login").click(function () {
+        swal({
+            title: 'Connexion',
+            html: '{{> popup_login}}',
+            showCancelButton: false,
+            showConfirmButton: false
+        });
+    });
+    $("#signin").click(function () {
+        swal({
+            title: 'Inscription',
+            html: '{{> popup_signin}}',
+            showCancelButton: false,
+            showConfirmButton: false
+        });
+    });
+    $("#editProfile").click(function () {
+        swal({
+            title: 'Editer mon profil',
+            html: '{{> popup_editProfile}}',
+            showCancelButton: false,
+            showConfirmButton: false
+        });
+    });
 </script>

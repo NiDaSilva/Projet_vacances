@@ -1,15 +1,7 @@
 /**
  * Created by root on 28/02/17.
  */
-var MongoClient = require("mongodb").MongoClient;
-fs = require('fs');
 
-
-MongoClient.connect("mongodb://10.2.8.32/db_IMIEVacances", function (err, db) {
-    if(err){return console.dir(err);}
-
-    console.log("Connecté à la base de données !");
-});
 
 function populateDB() {
     var collection = db.collection("logements");
