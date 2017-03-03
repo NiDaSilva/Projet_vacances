@@ -25,7 +25,7 @@ module.exports = function (app, db) {
 		    }
 		});
 
-		res.redirect('/msgValid=login');
+		res.redirect('/?msgValid=login');
 	});
 
 	/* Inscription */
@@ -85,13 +85,13 @@ module.exports = function (app, db) {
 
 		});
 
-		res.redirect('/msgValid=editUser');
+		res.redirect('/?msgValid=editUser');
 	});
 
 	/* Deconnexion */
 	app.get('/user/logout', function(req, res, next) {
 		delete req.session.authenticated;
 		delete req.session.user;
-		res.redirect('/msgValid=logout');
+		res.redirect('/?msgValid=logout');
 	});
 };

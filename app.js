@@ -29,6 +29,7 @@ MongoClient.connect("mongodb://10.2.8.19/db_IMIEVacances", function (err, db) {
 
 	var index = require('./routes/index')(app, db);
 	var user = require('./routes/user')(app, db);
+	var reservation = require('./routes/reservation')(app, db);
 
 	// view engine setup
 	app.set('views', path.join(__dirname, 'views'));

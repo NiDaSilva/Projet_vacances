@@ -72,6 +72,6 @@ module.exports = function (app, db) {
 
 		});
 
-		res.redirect('/msgValid=editRes');
+		res.redirect('/?msgValid=editRes');
 	});
 };
