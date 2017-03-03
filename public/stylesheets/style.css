@@ -112,3 +112,54 @@ a {
   top: 0;
   z-index: -1;
 }
+.card{
+    border:0;
+}
+.card-cascade.narrower{
+    margin-top: 20px;
+}
+.card-cascade{
+    display: inline-block;
+}
+.view{
+    overflow: hidden;
+    border-radius: 4px;
+    position: relative;
+    cursor: default;
+    box-shadow: 0 8px 17px 0 rgba(0,0,0,.2), 0 6px 20px 0 rgba(0,0,0,.19);
+}
+.card-img{
+    max-width: 100%;
+    height: auto;
+}
+.card-block{
+    padding: 1.25rem;
+    box-sizing: inherit;
+}
+.btn-action{
+    margin: -23px 20px -23px auto;
+
+    line-height: 0;
+}
+.btn-floating{
+    overflow: hidden;
+    z-index: 1;
+    padding: 0;
+}
+.btn-green{
+    margin: -23px 20px -23px auto;
+    height: 47px;
+    width: 47px;
+    position: relative;
+    background-color: #435247;
+    border-radius: 50% !important;
+}
+.chevron{
+    font-size: 18px;
+    margin-top: 5px;
+    text-rendering: auto;
+    width: inherit;
+    text-align: center;
+    display: inline-block;
+    color: white;
+}

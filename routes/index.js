@@ -5,7 +5,7 @@ module.exports = function (app, db) {
 
 	/* GET home page. */
 	app.get('/', function(req, res, next) {
-        db.collection("logements").find({classement:"2 étoiles"}).toArray(function(err, docs) {
+        db.collection("logements").find({ville:"ANGERS"}).toArray(function(err, docs) {
             hbs.registerPartial("popup_login", fs.readFileSync(__dirname+"/../views/login.hbs", 'utf-8'));
             hbs.registerPartial("popup_signin", fs.readFileSync(__dirname+"/../views/signin.hbs", 'utf-8'));
 
@@ -13,4 +13,14 @@ module.exports = function (app, db) {
             res.render('index', { title: 'Express', authenticated: req.session.authenticated, listeHotel:docs });
         });
 	});
+
+    /* GET detail page. */
+    app.post('/detail', function(req, res, next) {
+
+        db.collection("logements").find({_id:req.body.id}).toArray(function(err, docs) {
+            hbs.registerPartial("popup_login", fs.readFileSync(__dirname+"/../views/login.hbs", 'utf-8'));
+            hbs.registerPartial("popup_signin", fs.readFileSync(__dirname+"/../views/signin.hbs", 'utf-8'));
+            res.send(docs);
+        });
+    });
 };
