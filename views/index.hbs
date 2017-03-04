@@ -14,7 +14,7 @@
                     <div class="view overlay hm-white-slight">
                         <img class="img-fluid" src="/images/default.pg" style="width: 318px;" alt="Card image cap">
                     </div>
-                    <a class="btn btn-green"><i class="glyphicon glyphicon-chevron-right chevron"></i> </a>
+                    <a class="btn btn-grey"><i class="glyphicon glyphicon-chevron-right chevron"></i> </a>
                     <div class="card-block">
                         <h5 id="{{_id}}" class="red-text">{{nom}} <i class="glyphicon glyphicon-eye-open"></i></h5>
                         <h4 class="card-title">{{ville}}</h4>
@@ -31,6 +31,12 @@
 
 
 <script>
+    $(".btn-grey").click(function () {
+        swal({
+            title:"Réservation",
+            html:'<div class="container"><div class="card card-container" style="width: 430px; height: 100%;padding: 20px;"><p><strong>'+data.classement+'</strong></p><p>'+data.adresse+'</p><p><strong>'+data.code_postal+'</strong></p></div></div>'
+        });
+    });
     $("#login").click(function () {
         swal({
             title: 'Connexion',
@@ -64,7 +70,6 @@
             },
             dataType: 'json',
             success: function(data) {
-                console.log(data);
                 swal({
                    title:data.nom,
                     html:'<div class="container"><div class="card card-container" style="width: 430px; height: 100%;padding: 20px;"><p><strong>'+data.classement+'</strong></p><p>'+data.adresse+'</p><p><strong>'+data.code_postal+'</strong></p></div></div>'
@@ -74,7 +79,4 @@
             type: 'POST'
         });
     });
-
-
-
 </script>

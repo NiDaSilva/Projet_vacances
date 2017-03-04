@@ -9,7 +9,7 @@ module.exports = function (app, db) {
 
 	    //var collection = db.get('users');
 
-		var user = {email: req.body.email, mdp: req.body.mdp}
+		var user = {email: req.body.email, mdp: req.body.mdp};
 
 		db.collection('users').findOne(user, function(error, result) {
 		    if (error)
