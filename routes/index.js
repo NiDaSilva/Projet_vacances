@@ -36,18 +36,20 @@ module.exports = function (app, db) {
     /* POST reservation. */
     app.post('/reservation', function(req, res, next) {
         var newResa = {
-            idUser: req.session.user,
+            idUser: req.session.user._id,
+            nbReservation:req.body.nbResa,
             idHotel: req.body.idH,
-            dateD: req.body.dateDebut,
-            dateF: req.body.dateFin
+            dateD: req.body.dateD,
+            dateF: req.body.dateF
         };
         //On insère la nouvelle réservation
         db.collection("reservations").insert(newResa, null, function(error, results) {
-            if (error) throw error;
-
-            console.log("La réservations a bien été inséré");
+            if (error) {
+                throw error;
+            }else {
+                console.log("La réservations a bien été inséré");
+                res.send({ok:"success", message:"La réservation à bien été prise en compte"});
+            }
         });
-
-        res.send({ok:"success", message:"La réservation à bien été prise en compte"});
     });
 };

@@ -32,9 +32,31 @@
 
 <script>
     $(".btn-grey").click(function () {
+        var id = $(this).parent().find("h5").attr("id");
         swal({
-            title:"Réservation",
-            html:'<div class="container"><div class="card card-container" style="width: 430px; height: 100%;padding: 20px;"><p><strong>'+data.classement+'</strong></p><p>'+data.adresse+'</p><p><strong>'+data.code_postal+'</strong></p></div></div>'
+            title: 'Réservation',
+            html: '<div style="display: none">'+id+'</div>'+
+            '<div class="row"><div class="col-sm-6"><input type="number" id="nbreserv" class="form-control col-sm-8" placeholder="Nombres de personnes: "/></div></div>'+
+            '<div class="row" style="margin-top: 30px"><div class="col-sm-6"><div class="form-group"><div class="input-group date"><input type="date" id="dateD" class="form-control" placeholder="Date de début" /><span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></div>'+
+            '<div class="col-sm-6"><div class="form-group"><div class="input-group date"><input type="date" id="dateF" class="form-control" placeholder="Date de fin"/><span class="input-group-addon"> <span class="glyphicon glyphicon-calendar"></span></span></div></div></div></div>',
+            showCancelButton: false,
+            confirmButtonClass: "btn-reserv"
+        });
+        $(".btn-reserv").click(function () {
+            $.ajax({
+                url: '/reservation',
+                data: {
+                    idH: id,
+                    nbResa:$("#nbreserv").val(),
+                    dateD: $("#dateD").val(),
+                    dateF: $("#dateF").val()
+                },
+                dataType: 'json',
+                success: function(data) {
+                    console.log(data);
+                },
+                type: 'POST'
+            });
         });
     });
     $("#login").click(function () {
@@ -62,7 +84,6 @@
         });
     });
     $(".red-text").click(function () {
-
         $.ajax({
             url: '/detail',
             data: {
@@ -71,7 +92,7 @@
             dataType: 'json',
             success: function(data) {
                 swal({
-                   title:data.nom,
+                    title:data.nom,
                     html:'<div class="container"><div class="card card-container" style="width: 430px; height: 100%;padding: 20px;"><p><strong>'+data.classement+'</strong></p><p>'+data.adresse+'</p><p><strong>'+data.code_postal+'</strong></p></div></div>'
                 });
 
